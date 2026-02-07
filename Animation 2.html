@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<title> CSS Animations Examples</title>
+<style>
+    div#mydiv {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+    }
+
+    @keyframes example {
+        0% {background-color: red;}
+        25% {background-color: yellow;}
+        50% {background-color: blue;}
+        75% {background-color: green;}
+        100% {background-color: black;}
+        
+    }
+    div#mydiv2 {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        position: relative;
+        animation-name: exercise;
+        animation-duration: 4s;
+        animation-iteration-count: infinite; 
+        animation-direction: alternate; 
+    }
+
+    @keyframes exercise {
+        0% {background-color: violet; left: 0px; top: 0px}
+        25% {background-color: yellow; left: 200px; top: 0px}
+        50% {background-color: indianred; left: 200px; top: 200px;}
+        75% {background-color: indigo; left: 0px; top: 200px;}
+        100% {background-color: black; left: 0px; top: 0px;}
+       
+    }
+
+</style>
+</head>
+<body>
+
+<div id="mydiv"></div>
+<br>
+<div id="mydiv2"></div>
+
+</body>
+
+</html>
